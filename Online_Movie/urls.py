@@ -25,7 +25,7 @@ urlpatterns = [
     path('showpage',views.showpage, name='showpage'),
     path('movie/<int:movie_id>',views.movie, name='movie'),
     path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),
+    #path('login/', views.login, name='login'),
     #path('logout/', views.logout, name='logout'),
     # path('profile/', views.profile, name='profile')
 ]
