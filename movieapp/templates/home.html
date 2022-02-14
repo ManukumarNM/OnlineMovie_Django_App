@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+<!-- Title -->
+{% block title %}
+  <title>Home</title>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+<h3 class="mt-5 text-center"> Online Movie Application</h3>
+
+<div class="row mt-5">
+
+  {% for m in movie %}
+  <div class="col-sm" >
+    <div class="card" style="width: 18rem;">
+      <img src="https://img.youtube.com/vi/{{m.trailer}}/maxresdefault.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{ m.name }} </h5>
+
+        {% if m.star > 4 %}
+        <span class="badge rounded-pill bg-success">Good</span>
+
+        {% elif m.star >= 3 %}
+        <span class="badge rounded-pill bg-warning text-dark">Just ok</span>
+
+        {% else %}
+        <span class="badge rounded-pill bg-danger">Bad</span>
+
+        {% endif %}
+        <p class="card-text"> {{ m.description }} </p>
+        <a href="{% url 'movie' m.id %}" class="btn btn-primary"> Trailer  </a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
