@@ -10,6 +10,6 @@ admin.site.register(Movie, MyMovie)
 
 
 class Myprofile(admin.ModelAdmin):
-    list_display = ['user', 'image']
+    #list_display = ['user', 'image']
 
 #admin.site.register(Profile, Myprofile)
