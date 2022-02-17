@@ -9,7 +9,7 @@ class MyMovie(admin.ModelAdmin):
 admin.site.register(Movie, MyMovie)
 
 
-class Myprofile(admin.ModelAdmin):
+#class Myprofile(admin.ModelAdmin):
     #list_display = ['user', 'image']
 
 #admin.site.register(Profile, Myprofile)
