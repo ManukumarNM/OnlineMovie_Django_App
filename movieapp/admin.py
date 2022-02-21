@@ -6,7 +6,7 @@ class MyMovie(admin.ModelAdmin):
     list_display = ('name' , 'description', 'year', 'star', 'show')
     list_filter = ('star', 'show')
 
-#admin.site.register(Movie, MyMovie)
+admin.site.register(Movie, MyMovie)
 
 
 #class Myprofile(admin.ModelAdmin):
