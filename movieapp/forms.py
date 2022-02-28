@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from .models import *
 
 class ProfileUpdateForm(forms.ModelForm):
-#     class Meta:
+    class Meta:
 #         model = Profile
 #         fields = ['image']
 
