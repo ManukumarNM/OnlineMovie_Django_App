@@ -4,7 +4,7 @@ from .models import *
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
-#         model = Profile
+        model = Profile
 #         fields = ['image']
 
 class UserUpdateForm(forms.ModelForm):
